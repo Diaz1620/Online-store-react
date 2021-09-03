@@ -1,0 +1,21 @@
+.item {
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    width: 20rem;
+    height: auto;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.item:hover{
+    border: 1px solid var(--border-color-vivid);
+}
+
+.item h5{
+    margin-top: .3rem;
+}
+
+.item .controls{
+    display: flex;
+    justify-content: space-evenly;
+}

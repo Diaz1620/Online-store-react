@@ -1,6 +1,7 @@
 import "./footer.css"
 
-function Footer() {
+function Footer() {    
+    
     return (
         <div className="footer">
             <h3>Here is a footer!!</h3>

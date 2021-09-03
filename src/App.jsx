@@ -1,8 +1,9 @@
 import "./App.css";
 import NavBar from "./components/navBar";
 import Footer from "./components/footer";
-import QuantityPicker from "./components/quantityPicker";
+// import QuantityPicker from "./components/quantityPicker";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Catalog from "./components/catalog";
 
 function App() {
   return (
@@ -10,8 +11,7 @@ function App() {
       <NavBar></NavBar>
 
       <div className="container-fluid">
-        <h1>Online Store</h1>
-        <QuantityPicker></QuantityPicker>
+        <Catalog></Catalog>
       </div>
 
       <Footer></Footer>
