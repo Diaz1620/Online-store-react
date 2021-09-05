@@ -3,6 +3,7 @@ import NavBar from "./components/navBar";
 import Footer from "./components/footer";
 // import QuantityPicker from "./components/quantityPicker";
 import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/js/bootstrap.min.js";
 import Catalog from "./components/catalog";
 
 function App() {

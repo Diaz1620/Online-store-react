@@ -23,20 +23,20 @@ const Item = (props) => {
         )
     }
 
-    const getTotal = () => {
-        let price = 10;
-        return price * quantity;
+    const getTotal = (price) => {
+        let total = price * quantity
+        return total.toFixed(2);
     }
 
     return (
         <div className="item">
-            <img src="https://picsum.photos/200/280" alt="placeholder"></img>
+            <img src={"images/" + props.data.image} alt="placeholder"></img>
 
-            <h5>{props.title}</h5>
+            <h5>{props.data.title}</h5>
 
             <div className="prices d-flex justify-content-around">
-                <label>Price: ${props.price}</label>
-                <label>Total: ${getTotal()}</label>
+                <label>Price: ${props.data.price}</label>
+                <label>Total: ${getTotal(props.data.price.toFixed(2))}</label>
             </div>
             
             {getControls()}
